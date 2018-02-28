@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Titulo da Pagina</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script type="text/javascript">
+            function soma(p1,p2){
+                alert(p1+p2);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Programação Comercial</h1>
+        <h2>...</h2> 
+
+        <img src="img/uft.jpg" title="uft" height="250" width="200">
+        <a href="http://www.uft.edu.br/" target="self">Primeiro link</a>
+
+        <h2>Lista Ordenada</h2>
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ol>
+
+        <h2>Lista não ordenada</h2>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ul>
+
+        <table>
+            <caption>Descrição das tabelas</caption>
+            <thead>
+                <tr>
+                    <td>Coluna 01</td>
+                    <td>Coluna 02</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Linha 01</td>
+                    <td>Linha 01</td>
+                </tr>
+                <tr>
+                    <td>Linha 02</td>
+                    <td>Linha 02</td>
+                </tr>
+                <tr>
+                    <td>Linha 03</td>
+                    <td>Linha 03</td>
+                </tr>
+                <tr>
+                    <td>Linha 04</td>
+                    <td>Linha 04</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form action="/cadastro/" method="POST">
+            Login: <input type="text" name="login" placeholder="Digite seu login">
+            Senha: <input type="password" name="senha">
+            <br>
+
+            <input type="radio" name="sexo" value="1" checked>Masculino
+            <input type="radio" name="sexo" value="2">Feminino
+            <br>
+            <input type="checkbox" name="veiculo1" value="bike">Eu tenho uma bike
+            <input type="checkbox" name="veiculo2" value="carro">Eu tenho uma carro
+            <br>
+            Curso:
+                <select name="Curso">
+                    <option value="1">Ciência da Computação</option>
+                    <option value="2">Direito</option>
+                    <option value="3">Engenharia Eletrica</option>
+                    <option value="4">Medicina</option>
+                    <option value="5">Nutrição</option>
+                </select>
+
+            
+                Mensagem:<textarea name="message" rows="10" cols="30"></textarea>
+                Idade: <input type="number" name="idade" min="0" max="100" step="1" value="30">
+                Data de nascimento: <input type="Date" name="data_nascimento" min="2000-01-02">
+
+                <br>
+
+                Auto complete:<input list="cidades">
+                <datalist id="cidades">
+                    <option>Palmas</option>
+                    <option>Sâo paulo</option>
+                    <option>Rio de janeiro</option>
+                    <option>Curitiba</option>
+                    <option>Belém</option>
+                    <option>Belo Horizonte</option>
+                </datalist>
+
+
+                <br>
+                <input type="hidden" name="country" value="Brasil">
+
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+
+
+                <button type="button" onclick="alert('hello World')">Botão 01</button>
+
+
+                <button type="button" onclick="soma(10,29)">Botão 02</button>
+
+        </form>
+
+            <div id="area-mensagens">
+                Elementos de bloco
+            </div>
+            Elementos <span class="destaque"> de </span> linha <span class="destaque">teste</span>
+
+    		<h2>
+		    	<a href="https//www.w3schools.com/html/html_examples.asp" target="blank">
+		    		Outros elementos
+		    	</a>
+		    </h2>          
+    </body>
+</html>
